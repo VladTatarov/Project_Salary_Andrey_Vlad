@@ -27,28 +27,25 @@ T PrintArr(T arr)
 }
 
 int main()
+template<typename T>
+T SortAlgo(T arr[],T lenD)
 {
-	int ex;
-	switch (ex)
-	{
-	case 1:
-	{
-		int arr;
-		PrintArr(arr);
-		
-
-	
-
-	}
-	case 2:
-	{
-
-
-
-
-	}
-	default:
-		break;
-	}
+    lenD = 10;
+    int j = 0;
+    int tmp = 0;
+    for (int i = 0; i < lenD; i++) {
+        j = i;
+        for (int k = i; k < lenD; k++) {
+            if (arr[j] > arr[k]) {
+                j = k;
+            }
+        }
+        tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+    }
 }
-
+int main()
+{
+	
+}
