@@ -12,22 +12,19 @@ T PrintArr(T arr)
 	int arr[size];
 	for (int i = 0; i < size; i++)
 	{
-
+		
 	}
 	cout << arr << endl;
 }
 template <typename T>
 T RandArr(T arr)
 {
-	
 	size = 10;
 	int arr[size];
 	for (int i = 0; i < size; i++)
 	{
 		arr = rand() % 10 
 	}
-	
-	
 }
 
 int main()
