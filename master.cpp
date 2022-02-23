@@ -1,25 +1,16 @@
 #include <iostream>
 using namespace std;
-template <typename T>
-T SortAlgo(T arr[10],T lenD)
-{
-    lenD = 10;
-    int j = 0;
-    int tmp = 0;
-    for (int i = 0; i < lenD; i++) 
+template<typename T>
+void MaxElement(T arr[],T maxvalue) 
+{ 
+    for (int i = 0; i < 10; i++) 
     {
-        j = i;
-        for (int k = i; k < lenD; k++) 
+        if (arr[i] > maxvalue) 
         {
-            if (arr[j] > arr[k])
-            {
-                j = k;
-            }
+            maxvalue = arr[i];
         }
-        tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
     }
+    cout << "Maxvalue: " << maxvalue;
 }
 int main()
 {
