@@ -1,8 +1,5 @@
 #include <iostream>
 #include<Windows.h>
-
-
-
 using namespace std;
 template<typename T>
 void MaxElement(T arr[],T maxvalue) 
@@ -16,7 +13,6 @@ void MaxElement(T arr[],T maxvalue)
     }
     cout << "Maxvalue: " << maxvalue;
 }
-int main()
 
 template <typename T>
 T PrintArr(T arr)
@@ -26,7 +22,6 @@ T PrintArr(T arr)
 	
 }
 
-int main()
 template<typename T>
 T SortAlgo(T arr[],T lenD)
 {
