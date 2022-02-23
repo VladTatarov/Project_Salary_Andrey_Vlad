@@ -2,5 +2,26 @@
 using namespace std;
 int main()
 {
-	return 0;
+	int ex;
+	switch (ex)
+	{
+	case 1:
+	{
+
+	}
+	case 2:
+	{
+
+	}
+	case 3:
+	{
+
+	}
+	case 4:
+	{
+
+	}
+	default:
+		break;
+	}
 }
