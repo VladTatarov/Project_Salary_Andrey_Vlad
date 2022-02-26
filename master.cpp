@@ -17,8 +17,14 @@ void MaxElement(T arr[],T maxvalue)
 template <typename T>
 T PrintArr(T arr)
 {	
-	size = 10;
+	const int size = 10;
 	int arr[size];
+    for (int i = 0; i < size; i++)
+    {
+        arr[i] = rand() % 10000;
+        cout << "[" << i << "]" << endl;
+        cout << arr << endl;
+    }
 	
 }
 
