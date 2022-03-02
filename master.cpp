@@ -1,9 +1,10 @@
 #include <iostream>
-#include<Windows.h>
+#include<time.h>
 using namespace std;
 template<typename T>
-void MaxElement(T arr[],T maxvalue) 
+void MaxElement(T arr[])
 { 
+    T maxvalue = arr[0];
     for (int i = 0; i < 10; i++) 
     {
         if (arr[i] > maxvalue) 
@@ -15,28 +16,26 @@ void MaxElement(T arr[],T maxvalue)
 }
 
 template <typename T>
-T PrintArr(T arr)
+void PrintArr(T arr[])
 {	
-	const int size = 10;
-	int arr[size];
-    for (int i = 0; i < size; i++)
+    srand(time(0));
+    for (int i = 0; i < 10; i++)
     {
-        arr[i] = rand() % 10000;
-        cout << "[" << i << "]" << endl;
+        arr[i] = rand() % 1000;
+        cout << "[" << i+1 << "]" << endl;
         cout << arr << endl;
     }
-	
 }
-
 template<typename T>
-T SortAlgo(T arr[],T lenD)
+void SortAlgo(T arr[])
 {
-    lenD = 10;
     int j = 0;
     int tmp = 0;
-    for (int i = 0; i < lenD; i++) {
+    for (int i = 0; i < 10; i++) 
+    {
         j = i;
-        for (int k = i; k < lenD; k++) {
+        for (int k = i; k < 10; k++) 
+{
             if (arr[j] > arr[k]) {
                 j = k;
             }
@@ -48,5 +47,9 @@ T SortAlgo(T arr[],T lenD)
 }
 int main()
 {
-	
+    int arr[10];
+    PrintArr(arr);
+    SortAlgo(arr);
+    MaxElement(arr);
 }
+   
